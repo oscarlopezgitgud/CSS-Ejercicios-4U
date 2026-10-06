@@ -1,0 +1,202 @@
+*{
+/**/
+    margin: 0;
+/**/
+    padding: 0;
+}
+
+.main{
+/*hace que el contenedor ocupe el 100% del ancho disponible*/
+    width: 100%;
+/*Coloca*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(CR.png);
+/*Coloca la imagen en el centro*/
+    background-position: center;
+/*Hace que el contenedor que el 100% de altura visible*/
+    height: 100vh;
+/*Hace que la imagen cubra completamente el contenedor aumentarse*/
+    background-size: cover;
+/*Establece una fuente sin serifas para el contenido del contenedor*/
+    font-family: sans-serif;
+}
+
+.navbar{
+/**/
+    width: 95%;
+/**/
+    height: auto;
+/**/
+    margin-left: 30px;
+}
+
+.logo{
+/**/
+    color: rgb(219, 84, 5);
+/**/
+    font-size: 40px;
+/**/
+    font-family: cursive;
+/**/
+    float: left;
+/**/
+    cursor: pointer;
+/**/
+    padding-top: .6%;
+}
+
+.menu{
+/*Establece un ancho fijo de 600 pixeles para el menu*/
+    width: 600px;
+/*Coloca el menu flotando hacia el lado izquierdo*/
+    float: left;
+/* Establece una altura de 70 pixeles*/
+    height: 70px;
+}
+
+ul{
+/* Desplaza la lista hacia la izquierda*/
+    float: left;
+/*Activa Flexbox para organizar los elementos de la lista de forma flexible*/
+    display: flex;
+/* Agrega 30 pixeles de espacio interno en la parte superior*/
+    padding-top: 30px;
+/*centra los elementos sobre el eje principal de flexbox*/
+    justify-content: center;
+/*centra los elementos dobre el eje secundario en flexbox*/
+    align-items: center;
+/* Sepaara la losta 14 pixeles del lado izquierdo*/
+    margin-left: 15px;
+}
+
+ul li{
+/* Eliminar las viñetas*/
+    list-style: none;
+/* 60 pixeles de separeacion en la izquierda de cada elemento */
+    margin-left: 60px;
+/* Establece el tamañp del texto en 16 pixeles*/
+    font-size: 16px;
+}
+
+ul li a{
+/* elimina el subrayado predeterminado de los enlaces*/
+    text-decoration: none;
+/* Establece el texto de los enlaces en color rojo*/
+    color: #fff;
+/* Define Arial como primer opcion de fuente y las otras*/
+    font-family: Arial, Helvetica, sans-serif;
+/* Coloca el texto de los enlaces en negrita*/
+    font-weight: bold;
+/* Hace que los cambios visuales ocurran */
+    transition: .3s ease;
+}
+
+ul li a:hover{
+/*Cambia el texto del enelace a color naranja*/
+    color: orangered;
+}
+
+.search-box{
+/* Desplaza la caja de busqueda hacia el lado derecho*/
+    float: right;
+/* Establece el ancho de la caja en 240 pixeles*/
+    width: 240px;
+/* Establece el ancho de la caja en 240 pixeles*/
+    height: 30px;
+/* Establece el fondo de color blanco a la caja */
+    background: #fff;
+/* Agrega 8 pixeles de espacio interno alrededor del contenido*/
+    padding: 8px;
+/* Redondea las esquinas de la caja de busqueda*/
+    border-radius: 15px;
+/* Agrega separacion externa en la aprte superior*/
+    margin-top: 1%;
+/* Agrega separacion externa en la aprte derecha*/
+    margin-right: 2%;
+}
+
+.search-box .search-txt{
+/* Establece el ancho del campo de busqueda en 190 pixeles */
+    width: 190px;
+/* No agrega espacio arriba/abajo y agrega 6 pixeles a izquierda/derecha */
+    padding: 0, 6px;
+}
+
+.search-btm{
+/* Elimina el subrayado predeterminado del enlace */
+    text-decoration: none;
+/* Establece un fondo blanco */
+    background: #fff;
+/* Establece el incono de color negro */
+    color: #000;
+/* Activa flexbox dentro del boton */
+    display: flex;
+/* Desplaza el boton hacia la derecha */
+    float: right;
+/* Centra horizontalmente el contenido segun el eje principal del Flexbox*/
+    justify-content: center;
+/* Establece un ancho de 30 pixeles*/
+    width: 30px;
+/* Establece un alto de 30 pixeles*/
+    height: 30px;
+}
+
+.search-txt{
+/*Elimina el borde predeterminado del campo de texto*/
+    border: none;
+/* Elimina el fondo propio del campo para utilizar el contenedor*/
+    background: none;
+/* Elimina el contorno predeterminado al seleccionar el campo*/
+    outline: none;
+/* Desplaza el campo de texto hacia la izquierda */
+    float: left;
+/* Establece el texto escrito por el usuario en color azul */
+    color: rgb(0,0,0);
+/* Establace el tamaño del texto en 16 pixeles */
+    font-size: 16px;
+/* Establece una altura de linea de 30 pixeles */
+    line-height: 30px;
+/* Agrega una separacion de 0.6 pixeles entre cada letra*/
+    letter-spacing: .6px;
+}
+
+.title{
+/* Permite posicionar el elemento mediante corrdenadas top, left, right, up y asi*/
+    position: absolute;
+/* Coloca el punto de referencia del titulo al 40% desde la parte superior*/
+    top:40%;
+/* Lo mismo que el anterior solo que, desde la izquierda*/
+    left:50%;
+/* Mueve el elemento la mitad de su ancho y alyo para centrarlo completamente*/
+    transform: translate(-50%, -50%) 
+}
+
+.title h1{
+/* Cambia el color del titulo */
+    color: #fff;
+/* Establece un tamaño grande de 85 pixeles*/
+    font-size: 85px;
+/* Aplica una tipografia cursiva al titulo*/
+    font-family: cursive;
+/* Muestra el cursosr en forma de mano cuando pasa sobre el titulo*/
+    cursor: pointer;
+}
+
+.button{
+    /* Permite posicionar el elemento mediante corrdenadas top, left, right, up y asi*/
+    position: absolute;
+/* Coloca el punto de referencia del titulo al 40% desde la parte superior*/
+    top:51%;
+/* Lo mismo que el anterior solo que, desde la izquierda*/
+    left:50%;
+/* Mueve el elemento la mitad de su ancho y alyo para centrarlo completamente*/
+    transform: translate(-50%, -50%) 
+}
+
+btn{
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: -3s ease;
+}

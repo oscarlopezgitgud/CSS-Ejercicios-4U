@@ -1,0 +1,27 @@
+n1, n2, n3, n4, n5, n6{
+    font-family:Tahoma;
+}
+
+h1, h2, h3{
+    color:red;
+}
+
+h4, h5, h6{
+    color: blue;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h4{
+    font-size: 20px;
+}
